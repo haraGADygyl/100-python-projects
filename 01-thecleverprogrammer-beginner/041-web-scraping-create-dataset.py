@@ -9,7 +9,7 @@ soup = BeautifulSoup(html, "html.parser")
 table = soup.findAll("table", {"class": "wikitable"})[0]
 rows = table.findAll("tr")
 
-with open("resources/languages.csv", "wt+", encoding="utf-8") as f:
+with open("../resources/languages.csv", "wt+", encoding="utf-8") as f:
     writer = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     for i in rows:
         row = []
@@ -17,5 +17,5 @@ with open("resources/languages.csv", "wt+", encoding="utf-8") as f:
             row.append(cell.get_text().strip())
         writer.writerow(row)
 
-a = pd.read_csv("resources/languages.csv")
+a = pd.read_csv("../resources/languages.csv")
 a.head()

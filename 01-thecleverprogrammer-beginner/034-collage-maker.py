@@ -35,5 +35,5 @@ def horizontal_collage(img1, img2, output_file):
     new_im.save(output_file)
 
 
-vertical_collage('resources/4.jpg', 'resources/5.jpg', 'resources/6.jpg')
-horizontal_collage('resources/1.jpg', 'resources/2.jpg', 'resources/3.jpg')
+vertical_collage('resources/4.jpg', 'resources/5.jpg', '../resources/6.jpg')
+horizontal_collage('resources/1.jpg', 'resources/2.jpg', '../resources/3.jpg')

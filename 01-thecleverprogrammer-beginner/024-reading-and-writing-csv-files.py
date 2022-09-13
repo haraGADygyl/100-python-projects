@@ -11,5 +11,5 @@ print(data.head())
 
 print("-" * 50)
 
-data_to_read = pd.read_csv("resources/age_data.csv")
+data_to_read = pd.read_csv("../resources/age_data.csv")
 print(data_to_read)

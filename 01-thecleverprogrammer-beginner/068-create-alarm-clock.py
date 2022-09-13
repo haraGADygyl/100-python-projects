@@ -18,5 +18,5 @@ while True:
     if alarm_hour == current_hour and \
             alarm_minutes == current_minutes \
             and alarm_seconds == current_seconds:
-        playsound.playsound('resources/alarm.mp3')
+        playsound.playsound('../resources/alarm.mp3')
         break
