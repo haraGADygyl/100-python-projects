@@ -32,4 +32,3 @@ print(second_largest(numbers2))
 print(second_largest(numbers3))
 print(second_largest(numbers4))
 print(second_largest(numbers5))
-
